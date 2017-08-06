@@ -12,88 +12,114 @@
     <view class="page-bottom">
         <view class="page-content">
             <ul  class="ul">
-                <li>首页</li>
-                <li>简介</li>
-                <li>产品</li>
-                <li>我</li>
+                <li bindtap="tap_index">首页</li>
+                <li bindtap="tap_about">简介</li>
+                <li bindtap="tap_product">产品</li>
+                <li bindtap="tap_join">加入我们</li>
+                <li bindtap="tap_contact">联系我们</li>
+                <li bindtap="tap_center">个人中心</li>
             </ul>
         </view>
     </view>
     <view bindtouchmove="tap_drag" bindtouchend="tap_end" bindtouchstart="tap_start" class="page-top {{open ? 'c-state1' : ''}}">
         <view class="index-nav">
-        	<image class="nav-menu-icon" bindtap="tap_ch" src="../../images/menu.png"></image>
-        	<image class="userinfo-avatar index-company-logo" src="../../images/logo.jpg" background-size="cover"></image><span>之梦科技</span>
+            <image class="nav-menu-icon" bindtap="tap_ch" src="../../images/menu.png"></image>
+            <image class="userinfo-avatar index-company-logo" src="../../images/logo.jpg" background-size="cover"></image><span>之梦科技</span>
         </view>
         <view class="swiper">
-        	<swiper indicator-active-color="{{dotactivecolor}}" indicator-dots="{{indicatorDots}}"
-			  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-			  <block wx:for="{{imgUrls}}">
-			    <swiper-item>
-			      <image src="{{item}}" class="slide-image" width="355" height="150"/>
-			    </swiper-item>
-			  </block>
-			</swiper>
+            <swiper indicator-active-color="{{dotactivecolor}}" indicator-dots="{{indicatorDots}}"
+              autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+              <block wx:for="{{imgUrls}}">
+                <swiper-item>
+                  <image src="{{item}}" class="slide-image" width="355" height="150"/>
+                </swiper-item>
+              </block>
+            </swiper>
         </view>
         <view class="navbar-menu">
-        	<ul>
-        		<li class="li-menu-news">
-        			<image src="../../images/news.png"></image>
-        			<p>公司动态</p>
-        		</li>
-        		<li class="li-menu-product">
-        			<image src="../../images/products.png"></image>
-        			<p>产品中心</p>
-        		</li>
-        		<li class="li-menu-join">
-        			<image src="../../images/join.png"></image>
-        			<p>加入我们</p>
-        		</li>
-        		<li class="li-menu-contact">
-        			<image src="../../images/contact.png"></image>
-        			<p>联系我们</p>
-        		</li>
-        	</ul>
+            <ul>
+                <li class="li-menu-news">
+                    <image src="../../images/news.png"></image>
+                    <p>新闻中心</p>
+                </li>
+                <li class="li-menu-product">
+                    <image src="../../images/products.png"></image>
+                    <p>产品中心</p>
+                </li>
+                <li class="li-menu-join">
+                    <image src="../../images/join.png"></image>
+                    <p>加入我们</p>
+                </li>
+                <li class="li-menu-contact">
+                    <image src="../../images/contact.png"></image>
+                    <p>联系我们</p>
+                </li>
+            </ul>
         </view>
         <view class="index-product index-container">
-        	<view class="product-title index-common-title">
-        		<text>产品展示</text>
-        	</view>
-        	<view class="contain-content product-content">
-        		<ul>
-	        		<li class="li-menu-news">
-	        			<image src="../../images/shequ.png"></image>
-	        			<p>互动社区</p>
-	        		</li>
-	        		<li class="li-menu-product">
-	        			<image src="../../images/content.png"></image>
-	        			<p>内容管理</p>
-	        		</li>
-	        		<li class="li-menu-join">
-	        			<image src="../../images/shop.png"></image>
-	        			<p>门店展示</p>
-	        		</li>
-	        		<li class="li-menu-contact">
-	        			<image src="../../images/card.png"></image>
-	        			<p>个人名片</p>
-	        		</li>
-	        	</ul>
-        	</view>
+            <view class="product-title index-common-title">
+                <text>产品展示</text>
+            </view>
+            <view class="contain-content product-content">
+                <ul class="product-ul">
+                    <li class="li-menu-news">
+                        <image src="../../images/shequ.png"></image>
+                        <p>互动社区</p>
+                    </li>
+                    <li class="li-menu-product">
+                        <image src="../../images/content.png"></image>
+                        <p>内容管理</p>
+                    </li>
+                    <li class="li-menu-join">
+                        <image src="../../images/shop.png"></image>
+                        <p>门店展示</p>
+                    </li>
+                    <li class="li-menu-contact">
+                        <image src="../../images/card.png"></image>
+                        <p>个人名片</p>
+                    </li>
+                </ul>
+            </view>
         </view>
         <view class="index-news index-container">
-        	<view class="news-title index-common-title">
-        		<text>新闻中心</text>
-        	</view>
-        	<view class="news-content">
-        		
-        	</view>
+            <view class="news-title index-common-title">
+                <text>新闻中心</text>
+            </view>
+            <view class=" contain-content news-content">
+                <ul class="index-ul news-ul">
+                    <li>2017.08.0晚计划子模块</li>
+                    <li>2017.08.0晚完成首页全部</li>
+                    <li>2017.08.05晚完成首页一半</li>
+                    <li>2017.08.04晚继续首页</li>
+                    <li>2017.08.03晚开始首页</li>
+                    <li>2017.08.02晚开始计划</li>
+                </ul>
+            </view>
         </view>
-		<view class="index-contact index-container">
-        	<view class="contact-title index-common-title">
-        		<text>联系我们</text>
-        	</view>
-        	<view class=" contain-content contact-content">
-        		<map id="map" longitude="120.131402" latitude="30.279155" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height: 300px;"></map>
-        	</view>
+        <view class="index-about index-container">
+            <view class="news-title index-common-title">
+                <text>关于我们</text>
+            </view>
+            <view class="contain-content about-content">
+               
+            </view>
+        </view>
+        <view class="index-contact index-container">
+            <view class="contact-title index-common-title">
+                <text>联系我们</text>
+            </view>
+            <view class=" contain-content contact-content">
+                <map id="map" longitude="120.131402" latitude="30.279155" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height: 300px;"></map>
+                <view class="contact-us">
+                    <ul class="index-ul contact-us-ul">
+                        <li><text class="li-left">地址：</text><text class="li-right">浙江省杭州市西湖区翠苑街道塘苗路18号</text></li>
+                        <li><text class="li-left">邮箱：</text><text class="li-right">fairyilys@gmail.com</text></li>
+                        <li><text class="li-left">QQ：</text><text class="li-right">1503534781</text></li>
+                        <li><text class="li-left">联系方式：</text><text class="li-right">13003652699</text></li>
+                    </ul>
+                </view>
+            </view>
+
         </view>
     </view>
 </view>

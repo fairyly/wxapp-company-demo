@@ -156,5 +156,45 @@ Page({
   },
   controltap(e) {
     console.log(e.controlId)
-  }
+  },
+
+  // 跳转
+  tap_index(e) {
+    this.tap_ch();
+    console.log(e);
+    wx.switchTab({
+      url: '../index/index'
+    })
+  },
+  tap_about(e) {
+    // this.tap_ch();
+    wx.switchTab({
+      url: '../about/about'
+    })
+  },
+  tap_product(e) {
+    this.tap_ch();
+    wx.switchTab({
+      url: '../product/product'
+    })
+  },
+  tap_center(e) {
+    this.tap_ch();
+    wx.switchTab({
+      url: '../center/center'
+    })
+  },
+  tap_join(e) {
+    this.tap_ch();
+    wx.redirectTo({
+      url: '../join/join'
+    })
+  },
+  tap_contact(e) {
+
+    this.tap_ch();
+    wx.redirectTo({
+      url: '../contact/contact'
+    })
+  },
 })
