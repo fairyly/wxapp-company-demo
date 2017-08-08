@@ -24,7 +24,7 @@
     <view bindtouchmove="tap_drag" bindtouchend="tap_end" bindtouchstart="tap_start" class="page-top {{open ? 'c-state1' : ''}}">
         <view class="index-nav">
             <image class="nav-menu-icon" bindtap="tap_ch" src="../../images/menu.png"></image>
-            <image class="userinfo-avatar index-company-logo" src="../../images/logo.jpg" background-size="cover"></image><span>之梦科技</span>
+            <image class="userinfo-avatar index-company-logo" src="../../images/logo.jpg" background-size="cover"></image><span>之梦</span>
         </view>
         <view class="swiper">
             <swiper indicator-active-color="{{dotactivecolor}}" indicator-dots="{{indicatorDots}}"
@@ -79,6 +79,7 @@
                         <p>个人名片</p>
                     </li>
                 </ul>
+                <button class="index-about-btn index-more" bindtap="redirect_product">了解更多</button>
             </view>
         </view>
         <view class="index-news index-container">
@@ -87,13 +88,14 @@
             </view>
             <view class=" contain-content news-content">
                 <ul class="index-ul news-ul">
-                    <li>2017.08.0晚计划子模块</li>
-                    <li>2017.08.0晚完成首页全部</li>
+                    <li>2017.08.07晚计划子模块</li>
+                    <li>2017.08.06晚完成首页全部</li>
                     <li>2017.08.05晚完成首页一半</li>
                     <li>2017.08.04晚继续首页</li>
                     <li>2017.08.03晚开始首页</li>
                     <li>2017.08.02晚开始计划</li>
                 </ul>
+                <button class="index-about-btn index-more" bindtap="redirect_news">了解更多</button>
             </view>
         </view>
         <view class="index-about index-container">
@@ -101,7 +103,13 @@
                 <text>关于我们</text>
             </view>
             <view class="contain-content about-content">
-               
+               <view class="index-about-left">
+                    <image src="../../images/news.png"></image>
+               </view>
+               <view class="index-about-right">
+                    <text>web前端开发，网站建设、小程序开发,坚持学习、简单、专注、极致</text>
+               </view>
+               <button class="index-about-btn index-more" bindtap="redirect_about">了解更多</button>
             </view>
         </view>
         <view class="index-contact index-container">
@@ -109,7 +117,7 @@
                 <text>联系我们</text>
             </view>
             <view class=" contain-content contact-content">
-                <map id="map" longitude="120.131402" latitude="30.279155" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height: 300px;"></map>
+                <map id="map" longitude="120.12855" latitude="30.280921" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height: 300px;"></map>
                 <view class="contact-us">
                     <ul class="index-ul contact-us-ul">
                         <li><text class="li-left">地址：</text><text class="li-right">浙江省杭州市西湖区翠苑街道塘苗路18号</text></li>

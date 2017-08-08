@@ -181,7 +181,7 @@ li {
 
 .contain-content {
     width: 100%;
-    padding: 10px 10px 0px 10px;
+    padding: 10px 10px 10px 10px;
     box-sizing:border-box;
 }
 .contain-content .product-ul li {
@@ -231,6 +231,41 @@ li {
 .news-content .news-ul li:hover {
     color: #333333;
     text-shadow: -1px 0px 10px 0px #ccc;
+}
+
+/*关于我们*/
+.about-content {
+    padding: 20px 10px;
+}
+.index-about-left,.index-about-right {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 13px;
+    color: #cdcdcd;
+}
+.index-about-left image {
+    width: 50px;
+    height: 50px;
+}
+.index-about-right {
+    width: 70%;
+    padding-left: 15px;
+}
+button.index-more {
+    width: 110px;
+    font-size: 14px;
+    line-height: 30px;
+    margin-top: 15px;
+    /*margin-left: 0px;*/
+    border: 0px solid #ddd;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 2px #eee;
+    background-color: #dedede;
+}
+button.index-more::after {
+    content: '';
+    transform-origin: 1 0;
+    border: 0px solid #ddd;
 }
 
 /*联系我们*/

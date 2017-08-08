@@ -22,20 +22,27 @@ Page({
     duration: 1000,
     dotactivecolor: '#1aad19',
     markers: [{
-      iconPath: "/resources/others.png",
-      id: 0,
-      latitude: 30.279155,
-      longitude: 120.131402,
-      width: 50,
-      height: 50
+        title:'之梦',
+        content:'之梦',
+        iconPath: "/resources/others.png",
+        id: 0,
+        latitude: 30.280921,
+        longitude: 120.12855,
+        width: 50,
+        height: 50,
+        bgColor: '#777777',
+        color: '#ffffff',
+        fontSize: '13px',
+        display:'ALWAYS',
+        callout:{content:'之梦', color: '#ffffff', fontSize: '13px', borderRadius:'5px', bgColor: '#777777', display:'ALWAYS'}
     }],
     polyline: [{
       points: [{
-        longitude: 120.131402,
-        latitude: 30.279155
+        longitude: 120.12855,
+        latitude: 30.280921
       }, {
-        longitude: 120.131402,
-        latitude: 30.279155
+        longitude: 120.12855,
+        latitude: 30.280921
       }],
       color:"#FF0000DD",
       width: 2,
@@ -197,4 +204,9 @@ Page({
       url: '../contact/contact'
     })
   },
+  redirect_about() {
+    wx.switchTab({
+      url: '../about/about'
+    })
+  }
 })

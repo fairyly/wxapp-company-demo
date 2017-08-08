@@ -11,7 +11,7 @@
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#11cd6e",
-    "navigationBarTitleText": "之梦科技",
+    "navigationBarTitleText": "之梦",
     "navigationBarTextStyle":"#fff"
   },
   "tabBar": {  
