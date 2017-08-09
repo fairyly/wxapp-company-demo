@@ -204,9 +204,31 @@ Page({
       url: '../contact/contact'
     })
   },
+  //更多跳转
+
+  redirect_join() {
+    wx.redirectTo({
+      url: '../join/join'
+    })
+  },
+  redirect_join() {
+    wx.redirectTo({
+      url: '../contact/contact'
+    })
+  },
+  redirect_product() {
+     wx.switchTab({
+      url: '../product/product'
+    })
+  },
   redirect_about() {
     wx.switchTab({
       url: '../about/about'
     })
-  }
+  },
+  redirect_news() {
+    wx.redirectTo({
+      url: '../news/news'
+    })
+  },
 })

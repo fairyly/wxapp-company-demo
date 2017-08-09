@@ -38,19 +38,19 @@
         </view>
         <view class="navbar-menu">
             <ul>
-                <li class="li-menu-news">
+                <li class="li-menu-news" bindtap="redirect_news">
                     <image src="../../images/news.png"></image>
                     <p>新闻中心</p>
                 </li>
-                <li class="li-menu-product">
+                <li class="li-menu-product" bindtap="redirect_product">
                     <image src="../../images/products.png"></image>
                     <p>产品中心</p>
                 </li>
-                <li class="li-menu-join">
+                <li class="li-menu-join" bindtap="redirect_join">
                     <image src="../../images/join.png"></image>
                     <p>加入我们</p>
                 </li>
-                <li class="li-menu-contact">
+                <li class="li-menu-contact" bindtap="redirect_contact">
                     <image src="../../images/contact.png"></image>
                     <p>联系我们</p>
                 </li>
@@ -79,7 +79,7 @@
                         <p>个人名片</p>
                     </li>
                 </ul>
-                <button class="index-about-btn index-more" bindtap="redirect_product">了解更多</button>
+                <button class=" index-more" bindtap="redirect_product">了解更多</button>
             </view>
         </view>
         <view class="index-news index-container">
@@ -88,14 +88,25 @@
             </view>
             <view class=" contain-content news-content">
                 <ul class="index-ul news-ul">
-                    <li>2017.08.07晚计划子模块</li>
-                    <li>2017.08.06晚完成首页全部</li>
-                    <li>2017.08.05晚完成首页一半</li>
-                    <li>2017.08.04晚继续首页</li>
-                    <li>2017.08.03晚开始首页</li>
-                    <li>2017.08.02晚开始计划</li>
+                    <li>
+                        <view class="index-news-left">
+                            <image src="../../images/news_1.png"></image>
+                        </view>
+                        <view class="index-news-right">
+                            <text>2017.08.07晚计划子模块</text>
+                        </view>
+                    </li>
+                    <li>
+                        <view class="index-news-left">
+                            <image src="../../images/news_3.png"></image>
+                        </view>
+                        <view class="index-news-right">
+                            <text>2017.08.06晚完成首页全部</text>
+                        </view>
+                    </li>
+                    
                 </ul>
-                <button class="index-about-btn index-more" bindtap="redirect_news">了解更多</button>
+                <button class="index-more" bindtap="redirect_news">了解更多</button>
             </view>
         </view>
         <view class="index-about index-container">

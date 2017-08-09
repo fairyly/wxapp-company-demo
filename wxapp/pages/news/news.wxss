@@ -19,10 +19,3 @@
 .usermotto {
   margin-top: 200px;
 }
-
-.about-detail-info {
-	line-height:24px;
-	font-size:14px;
-	color:#6a6a6a;
-
-}

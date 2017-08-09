@@ -1,10 +1,48 @@
-<!--index.wxml-->
-<view class="container">
-  <view  bindtap="bindViewTap" class="userinfo">
-    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+
+<view class="page">
+    <view class="page-bottom">
+        <view class="page-content">
+            <ul  class="ul">
+                <li bindtap="tap_index">首页</li>
+                <li bindtap="tap_about">简介</li>
+                <li bindtap="tap_product">产品</li>
+                <li bindtap="tap_join">加入我们</li>
+                <li bindtap="tap_contact">联系我们</li>
+                <li bindtap="tap_center">个人中心</li>
+            </ul>
+        </view>
+    </view>
+    <view bindtouchmove="tap_drag" bindtouchend="tap_end" bindtouchstart="tap_start" class="page-top {{open ? 'c-state1' : ''}}">
+        <view class="index-nav">
+            <image class="nav-menu-icon" bindtap="tap_ch" src="../../images/menu.png"></image>
+            <image class="userinfo-avatar index-company-logo" src="../../images/logo.jpg" background-size="cover"></image><span>之梦</span>
+        </view>
+        <view class="swiper">
+            <swiper indicator-active-color="{{dotactivecolor}}" indicator-dots="{{indicatorDots}}"
+              autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+              <block wx:for="{{imgUrls}}">
+                <swiper-item>
+                  <image src="{{item}}" class="slide-image" width="355" height="150"/>
+                </swiper-item>
+              </block>
+            </swiper>
+        </view>
+
+        <view class="index-about index-container">
+            <view class="news-title index-common-title">
+                <text>关于我们</text>
+            </view>
+            <view class="contain-content about-content">
+               <view class="index-about-left">
+                    <image src="../../images/news.png"></image>
+               </view>
+               <view class="index-about-right">
+                    <text>web前端开发，网站建设、小程序开发,坚持学习、简单、专注、极致</text>
+               </view>
+               <view>
+               	<text class="about-detail-info">@年轻人不要仗着年轻，肆意挥霍自己的身体，拼搏曾可贵，生命价更高。我不是公司，我是一名前端攻城狮,简单的事情就重复去做，重复的事情就坚持去做！努力到无能为力，奋斗到无能为力！学会学习，学会解决问题，做有思想的人，做有思想的web前端攻城狮！</text>
+               </view>
+            </view>
+        </view>
+    </view>
 </view>

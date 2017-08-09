@@ -1,5 +1,5 @@
 <!--index.wxml-->
-<view class="container">
+<!-- <view class="container">
   <view  bindtap="bindViewTap" class="userinfo">
     <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
     <text class="userinfo-nickname">{{userInfo.nickName}}</text>
@@ -7,4 +7,52 @@
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>
+</view> -->
+<view class="page">
+    <view class="page-bottom">
+        <view class="page-content">
+            <ul  class="ul">
+                <li bindtap="tap_index">首页</li>
+                <li bindtap="tap_about">简介</li>
+                <li bindtap="tap_product">产品</li>
+                <li bindtap="tap_join">加入我们</li>
+                <li bindtap="tap_contact">联系我们</li>
+                <li bindtap="tap_center">个人中心</li>
+            </ul>
+        </view>
+    </view>
+    <view bindtouchmove="tap_drag" bindtouchend="tap_end" bindtouchstart="tap_start" class="page-top {{open ? 'c-state1' : ''}}">
+        <view class="index-nav">
+            <image class="nav-menu-icon" bindtap="tap_ch" src="../../images/menu.png"></image>
+            <image class="userinfo-avatar index-company-logo" src="../../images/logo.jpg" background-size="cover"></image><span>之梦</span>
+        </view>
+        <view class="swiper">
+            <swiper indicator-active-color="{{dotactivecolor}}" indicator-dots="{{indicatorDots}}"
+              autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+              <block wx:for="{{imgUrls}}">
+                <swiper-item>
+                  <image src="{{item}}" class="slide-image" width="355" height="150"/>
+                </swiper-item>
+              </block>
+            </swiper>
+        </view>
+
+        <view class="index-contact index-container">
+            <view class="contact-title index-common-title">
+                <text>联系我们</text>
+            </view>
+            <view class=" contain-content contact-content">
+                <map id="map" longitude="120.12855" latitude="30.280921" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height: 300px;"></map>
+                <view class="contact-us">
+                    <ul class="index-ul contact-us-ul">
+                        <li><text class="li-left">地址：</text><text class="li-right">浙江省杭州市西湖区翠苑街道塘苗路18号</text></li>
+                        <li><text class="li-left">邮箱：</text><text class="li-right">fairyilys@gmail.com</text></li>
+                        <li><text class="li-left">QQ：</text><text class="li-right">1503534781</text></li>
+                        <li><text class="li-left">联系方式：</text><text class="li-right">13003652699</text></li>
+                    </ul>
+                </view>
+            </view>
+
+        </view>
+    </view>
 </view>

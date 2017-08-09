@@ -6,6 +6,7 @@
     "pages/product/product",
     "pages/join/join",
     "pages/contact/contact",
+    "pages/news/news",
     "pages/logs/logs"
   ],
   "window":{

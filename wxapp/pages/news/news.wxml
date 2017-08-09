@@ -1,0 +1,91 @@
+
+<view class="page">
+    <view class="page-bottom">
+        <view class="page-content">
+            <ul  class="ul">
+                <li bindtap="tap_index">首页</li>
+                <li bindtap="tap_about">简介</li>
+                <li bindtap="tap_product">产品</li>
+                <li bindtap="tap_join">加入我们</li>
+                <li bindtap="tap_contact">联系我们</li>
+                <li bindtap="tap_center">个人中心</li>
+            </ul>
+        </view>
+    </view>
+    <view bindtouchmove="tap_drag" bindtouchend="tap_end" bindtouchstart="tap_start" class="page-top {{open ? 'c-state1' : ''}}">
+        <view class="index-nav">
+            <image class="nav-menu-icon" bindtap="tap_ch" src="../../images/menu.png"></image>
+            <image class="userinfo-avatar index-company-logo" src="../../images/logo.jpg" background-size="cover"></image><span>之梦</span>
+        </view>
+        <view class="swiper">
+            <swiper indicator-active-color="{{dotactivecolor}}" indicator-dots="{{indicatorDots}}"
+              autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+              <block wx:for="{{imgUrls}}">
+                <swiper-item>
+                  <image src="{{item}}" class="slide-image" width="355" height="150"/>
+                </swiper-item>
+              </block>
+            </swiper>
+        </view>
+
+        <view class="index-news index-container">
+            <view class="news-title index-common-title">
+                <text>新闻中心</text>
+            </view>
+            <view class=" contain-content news-content">
+                <ul class="index-ul news-ul">
+                    <li>
+                        <view class="index-news-left">
+                            <image src="../../images/news_1.png"></image>
+                        </view>
+                        <view class="index-news-right">
+                            <text>2017.08.07晚计划子模块</text>
+                        </view>
+                    </li>
+                    <li>
+                        <view class="index-news-left">
+                            <image src="../../images/news_2.png"></image>
+                        </view>
+                        <view class="index-news-right">
+                            <text>2017.08.06晚完成首页全部</text>
+                        </view>
+                    </li>
+                    <li>
+                        <view class="index-news-left">
+                            <image src="../../images/news_3.png"></image>
+                        </view>
+                        <view class="index-news-right">
+                            <text>2017.08.05晚完成首页一半</text>
+                        </view>
+                    </li>
+                    <li>
+                        <view class="index-news-left">
+                            <image src="../../images/news_4.png"></image>
+                        </view>
+                        <view class="index-news-right">
+                            <text>2017.08.04晚继续首页</text>
+                        </view>
+                    </li>
+                    <li>
+                        <view class="index-news-left">
+                            <image src="../../images/news_5.png"></image>
+                        </view>
+                        <view class="index-news-right">
+                            <text>2017.08.03晚开始首页</text>
+                        </view>
+                    </li>
+                    <li>
+                        <view class="index-news-left">
+                            <image src="../../images/news_6.png"></image>
+                        </view>
+                        <view class="index-news-right">
+                            <text>2017.08.02晚开始计划</text>
+                        </view>
+                    </li>
+                </ul>
+                
+            </view>
+        </view>
+    </view>
+</view>
+
