@@ -17,5 +17,44 @@
 }
 
 .usermotto {
-  margin-top: 200px;
+	width: 100%;
+	padding: 10px 10px 10px 10px;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+.user-motto {
+	display: block;
+	text-align: center;
+	font-size: 14px;
+	color: #888;
+}
+.usermotto li {
+    width: 100%;
+    list-style: none;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #666666;
+    border-bottom: 1px solid #eeeeee; 
+    box-sizing:border-box;
+    clear:both;
+
+}
+.usermotto li text.li-address {
+	width: 90%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	text-align: right;
+}
+
+li text.li-left{
+   float: left;
+   font-size: 13px;
+}
+li text.li-right{
+   float: right;
+   font-size: 13px;
 }

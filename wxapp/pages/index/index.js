@@ -211,7 +211,7 @@ Page({
       url: '../join/join'
     })
   },
-  redirect_join() {
+  redirect_contact() {
     wx.redirectTo({
       url: '../contact/contact'
     })
