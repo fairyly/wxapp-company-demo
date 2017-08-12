@@ -67,41 +67,6 @@ li {
     font-size: 14px;
     color: #555555;
 }
-/*产品中心*/
-
-.contain-content .product-ul li {
-    display: inline-block;
-    vertical-align: top;
-    width: 48%;
-    text-align: center;
-    margin-bottom: 10px;
-    border-radius: 2px;
-    padding: 20px 0 10px 0px;
-}
-.contain-content .product-ul li:nth-child(2n) {
-    margin-left:4%;
-}
-.contain-content .product-ul li.li-menu-news {
-    background: #11cd6e;
-}
-.contain-content .product-ul li.li-menu-product {
-    background: #FF8000;
-}
-.contain-content .product-ul li.li-menu-join {
-    background: #E6CF0B;
-}
-.contain-content .product-ul li.li-menu-contact {
-    background: #C122DD;
-}
-.contain-content .product-ul li image {
-    width: 60px;
-    height: 60px;
-}
-.contain-content .product-ul li p {
-    display: block;
-    font-size:14px;
-    color: #f2f2f2;
-}
 
 
 

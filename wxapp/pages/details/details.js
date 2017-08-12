@@ -12,53 +12,14 @@ Page({
     istoright:true,
     // swiper
     imgUrls: [
-      '../../images/banner_1.jpg',
-      '../../images/banner_2.jpg',
-      '../../images/banner_3.jpg'
+      '../../images/banner_4.jpg'
     ],
     indicatorDots: true,
     autoplay: false,
     interval: 5000,
     duration: 1000,
     dotactivecolor: '#1aad19',
-    markers: [{
-        title:'之梦',
-        content:'之梦',
-        iconPath: "/resources/others.png",
-        id: 0,
-        latitude: 30.280921,
-        longitude: 120.12855,
-        width: 50,
-        height: 50,
-        bgColor: '#777777',
-        color: '#ffffff',
-        fontSize: '13px',
-        display:'ALWAYS',
-        callout:{content:'之梦', color: '#ffffff', fontSize: '13px', borderRadius:'5px', bgColor: '#777777', display:'ALWAYS'}
-    }],
-    polyline: [{
-      points: [{
-        longitude: 120.12855,
-        latitude: 30.280921
-      }, {
-        longitude: 120.12855,
-        latitude: 30.280921
-      }],
-      color:"#FF0000DD",
-      width: 2,
-      dottedLine: true
-    }],
-    controls: [{
-      id: 1,
-      iconPath: '/resources/location.png',
-      position: {
-        left: 0,
-        top: 300 - 50,
-        width: 50,
-        height: 50
-      },
-      clickable: true
-    }]
+    
   },
   //事件处理函数
   bindViewTap: function() {
@@ -155,4 +116,9 @@ Page({
       url: '../news/news'
     })
   },
+  show_detail(){
+    wx.redirectTo({
+      url: '../details/details'
+    })
+  }
 })

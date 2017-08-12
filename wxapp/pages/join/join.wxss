@@ -19,3 +19,20 @@
 .usermotto {
   margin-top: 200px;
 }
+
+.join-content {
+	margin-bottom:20px;
+}
+.join-content .contact-us ul.contact-us-ul li {
+	height: 50px;
+	line-height: 50px;
+}
+.join-content ul li view {
+	display: block;
+	line-height: 20px;
+}
+.join-content ul li view .li-text-h1 {
+	font-size: 16px;
+	color:#333;
+	font-weight: 600;
+}

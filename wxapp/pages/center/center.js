@@ -53,47 +53,6 @@ Page({
         })
     }
 
-    wx.getSetting({
-        success(res) {
-            if (!res.authSetting['scope.record','scope.userLocation','scope.address','scope.writePhotosAlbum']) {
-                wx.authorize({
-                    scope: 'scope.record',
-                    success() {
-                        // 用户已经同意小程序使用录音功能，后续调用 wx.startRecord 接口不会弹窗询问
-                        // wx.startRecord()
-                    }
-                })
-                wx.authorize({
-                    scope: 'scope.userLocation',
-                    success() {
-                        // 用户已经同意小程序使用录音功能，后续调用 wx.startRecord 接口不会弹窗询问
-                        // wx.getLocation(
-                        //   {
-                        //   success: function (res) {
-                        //     console.log(res.userName)
-                        //     console.log(res.postalCode)
-                        //     console.log(res.provinceName)
-                        //     console.log(res.cityName)
-                        //     console.log(res.countyName)
-                        //     console.log(res.detailInfo)
-                        //     console.log(res.nationalCode)
-                        //     console.log(res.telNumber)
-                        //   }
-                        // })
-                        
-                    }
-                })
-                wx.authorize({
-                    scope: 'scope.address',
-                    success() {
-                        // 用户已经同意小程序使用录音功能，后续调用 wx.startRecord 接口不会弹窗询问
-                        // wx.chooseAddress()
-                        console.log( wx.chooseAddress())
-                    }
-                })
-            }
-        }
-    })
   },
 
   get_address(){

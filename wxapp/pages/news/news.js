@@ -12,9 +12,9 @@ Page({
     istoright:true,
     // swiper
     imgUrls: [
-      'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg',
-      'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg',
-      'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'
+      '../../images/banner_1.jpg',
+      '../../images/banner_2.jpg',
+      '../../images/banner_3.jpg'
     ],
     indicatorDots: true,
     autoplay: false,

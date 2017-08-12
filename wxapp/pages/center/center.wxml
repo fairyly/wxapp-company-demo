@@ -1,24 +1,30 @@
 <!--index.wxml-->
 <view class="container">
-  <view  bindtap="bindViewTap" class="userinfo">
-    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">基本信息</text>
-    <ul>
-    	<li>
-    		<text class="li-left">姓名</text>
-    		<text class="li-right">{{userInfo.nickName}}</text>
-    	</li>
-    	<li>
-    		<text class="li-left">地址</text>
-    		<text class="li-right li-address" bindtap="get_address">{{useraddress}}</text>
-    	</li>
-    	<li>
-    		<text class="li-left">性别</text>
-    		<text class="li-right">{{userInfo.gender == 1? "男":"女"}}</text>
-    	</li>
-    </ul>
-  </view>
+  	<view  bindtap="bindViewTap" class="userinfo">
+    	<image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    	<text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  	</view>
+  	<view class="usermotto">
+	    <text class="user-motto">基本信息</text>
+	    <ul>
+	    	<li>
+	    		<text class="li-left">姓名</text>
+	    		<text class="li-right">{{userInfo.nickName}}</text>
+	    	</li>
+	    	<li>
+	    		<text class="li-left">地址</text>
+	    		<text class="li-right li-address" bindtap="get_address">{{useraddress}}</text>
+	    	</li>
+	    	<li>
+	    		<text class="li-left">性别</text>
+	    		<text class="li-right">{{userInfo.gender == 1? "男":"女"}}</text>
+	    	</li>
+	    </ul>
+  	</view>
+  	<view class="qrcode">
+		<image src="../../images/gh_qrcode.jpg"></image>
+  	</view>
+  	<view class="footer-author">
+  		<text>由fairy提供技术支持</text>
+  	</view>
 </view>

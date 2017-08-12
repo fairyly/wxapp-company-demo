@@ -12,9 +12,9 @@ Page({
     istoright:true,
     // swiper
     imgUrls: [
-      'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg',
-      'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg',
-      'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'
+      '../../images/banner_1.jpg',
+      '../../images/banner_2.jpg',
+      '../../images/banner_3.jpg'
     ],
     indicatorDots: true,
     autoplay: false,
@@ -26,8 +26,8 @@ Page({
         content:'之梦',
         iconPath: "/resources/others.png",
         id: 0,
-        latitude: 30.280921,
-        longitude: 120.12855,
+        latitude: 30.27455,
+        longitude: 120.12211,
         width: 50,
         height: 50,
         bgColor: '#777777',
@@ -38,11 +38,11 @@ Page({
     }],
     polyline: [{
       points: [{
-        longitude: 120.12855,
-        latitude: 30.280921
+        longitude: 120.12211,
+        latitude: 30.27455
       }, {
-        longitude: 120.12855,
-        latitude: 30.280921
+        longitude: 120.12211,
+        latitude: 30.27455
       }],
       color:"#FF0000DD",
       width: 2,

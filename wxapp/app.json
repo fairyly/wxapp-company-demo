@@ -7,6 +7,7 @@
     "pages/join/join",
     "pages/contact/contact",
     "pages/news/news",
+    "pages/details/details",
     "pages/logs/logs"
   ],
   "window":{

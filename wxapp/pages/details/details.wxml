@@ -1,4 +1,3 @@
-
 <view class="page">
     <view class="page-bottom {{open ? 'p-left' : ''}}">
         <view class="page-content">
@@ -28,21 +27,33 @@
             </swiper>
         </view>
 
-        <view class="index-about index-container">
-            <view class="news-title index-common-title">
-                <text>关于我们</text>
+        <view class="index-contact index-container">
+            <view class="contact-title index-common-title">
+                <text>加入我们</text>
             </view>
-            <view class="contain-content about-content">
-               <view class="index-about-left">
-                    <image src="../../images/news.png"></image>
-               </view>
-               <view class="index-about-right">
-                    <text>web前端开发，网站建设、小程序开发,坚持学习、简单、专注、极致</text>
-               </view>
-               <view>
-               	<text class="about-detail-info">@年轻人不要仗着年轻，肆意挥霍自己的身体，拼搏曾可贵，生命价更高。我不是公司，我是一名前端攻城狮,简单的事情就重复去做，重复的事情就坚持去做！努力到无能为力，奋斗到无能为力！学会学习，学会解决问题，做有思想的人，做有思想的web前端攻城狮！</text>
-               </view>
+            <view class=" contain-content join-content">
+            	<view class="contact-us">
+                    <p>诚聘英才</p>
+                    <view class="join-time">
+                    	<text class="txt-time">2017-07-31 23:30:09</text><text class="text-menu" bindtap="tap_join">加入我们</text>
+                    </view>
+                    <view class="join-detail-content">
+                    	<text>加入我们加入我们加入我们加入我们加入我们加入我们加入我们</text>
+                    </view>
+                </view>
             </view>
+            <view class=" contain-content contact-content">
+               
+                <view class="contact-us">
+                    <ul class="index-ul contact-us-ul">
+                        <li><text class="li-left">地址：</text><text class="li-right">浙江省杭州市西湖区翠苑街道塘苗路18号</text></li>
+                        <li><text class="li-left">邮箱：</text><text class="li-right">fairyilys@gmail.com</text></li>
+                        <li><text class="li-left">QQ：</text><text class="li-right">1503534781</text></li>
+                        <li><text class="li-left">联系方式：</text><text class="li-right">13003652699</text></li>
+                    </ul>
+                </view>
+            </view>
+
         </view>
     </view>
 </view>
